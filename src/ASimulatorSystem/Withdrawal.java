@@ -7,13 +7,13 @@ import javax.swing.*;
 import java.util.Date;
 import java.sql.*;
 
-public class Withdrawl extends JFrame implements ActionListener{
+public class Withdrawal extends JFrame implements ActionListener{
     
     JTextField t1,t2;
     JButton b1,b2,b3;
     JLabel l1,l2,l3,l4;
     String pin;
-    Withdrawl(String pin){
+    Withdrawal(String pin){
         this.pin = pin;
         
         
@@ -102,6 +102,6 @@ public class Withdrawl extends JFrame implements ActionListener{
     
     
     public static void main(String[] args){
-        new Withdrawl("").setVisible(true);
+        new Withdrawal("").setVisible(true);
     }
 }
