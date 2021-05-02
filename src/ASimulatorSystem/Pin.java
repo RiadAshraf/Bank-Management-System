@@ -14,12 +14,7 @@ public class Pin extends JFrame implements ActionListener{
     String pin;
     Pin(String pin){
         this.pin = pin;
-        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("ASimulatorSystem/icons/atm.jpg"));
-        Image i2 = i1.getImage().getScaledInstance(1000, 1180, Image.SCALE_DEFAULT);
-        ImageIcon i3 = new ImageIcon(i2);
-        JLabel l4 = new JLabel(i3);
-        l4.setBounds(0, 0, 960, 1080);
-        add(l4);
+        
         
         l1 = new JLabel("CHANGE YOUR PIN");
         l1.setFont(new Font("System", Font.BOLD, 16));
@@ -47,32 +42,32 @@ public class Pin extends JFrame implements ActionListener{
         
         setLayout(null);
         
-        l1.setBounds(280,330,800,35);
-        l4.add(l1);
+        l1.setBounds(360,200,800,35);
+        add(l1);
         
-        l2.setBounds(180,390,150,35);
-        l4.add(l2);
+        l2.setBounds(180,290,150,35);
+        add(l2);
         
-        l3.setBounds(180,440,200,35);
-        l4.add(l3);
+        l3.setBounds(180,330,200,35);
+        add(l3);
         
-        t1.setBounds(350,390,180,25);
-        l4.add(t1);
+        t1.setBounds(350,290,180,25);
+        add(t1);
         
-        t2.setBounds(350,440,180,25);
-        l4.add(t2);
+        t2.setBounds(350,330,180,25);
+        add(t2);
         
-        b1.setBounds(390,588,150,35);
-        l4.add(b1);
+        b1.setBounds(370,400,150,35);
+        add(b1);
         
-        b2.setBounds(390,633,150,35);
-        l4.add(b2);
+        b2.setBounds(370,450,150,35);
+        add(b2);
         
-        setSize(960,1080);
-        setLocation(500,0);
-        setUndecorated(true);
+        getContentPane().setBackground(Color.BLACK);
+        setSize(850,650);
+        setLocation(250,70);
         setVisible(true);
-    
+        
     }
     
     public void actionPerformed(ActionEvent ae){

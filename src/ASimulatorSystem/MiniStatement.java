@@ -50,7 +50,7 @@ public class MiniStatement extends JFrame implements ActionListener{
                     balance -= Integer.parseInt(rs.getString("amount"));
                 }
             }
-            l4.setText("Your total Balance is Rs "+balance);
+            l4.setText("Your total Balance is Taka "+balance);
         }catch(Exception e){
             e.printStackTrace();
         }
